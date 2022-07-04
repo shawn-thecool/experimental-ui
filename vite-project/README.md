@@ -1,24 +1,22 @@
-# experimental-ui
-
+# experimental-ui with vite-project
 experimental-ui
-
-## install
-
-```
-yarn create vite
-
-yarn add -D @types/node
-yarn install
-yarn dev
-```
+dev env : vite + react-ts + rtk-query
 
 ## config path alias
+### install
+```
+yarn create vite
+yarn install
+yarn dev
+
+yarn add -D @types/node
+```
 
 1. check compiler options "paths" in tsconfig.json
 2. check installation @types/node to add compiler option "types"
 3. check resolve options "alias" in vite.config.ts
 
-tsconfig.json
+### tsconfig.json
 
 ```json
 {
@@ -33,7 +31,7 @@ tsconfig.json
 }
 ```
 
-vite.config.ts
+### vite.config.ts
 
 ```typescript
 export default defineConfig({
@@ -44,4 +42,9 @@ export default defineConfig({
   },
   plugins: [react()],
 });
+```
+## config redux-toolkit query
+### install
+```
+yarn add @reduxjs/toolkit react-redux
 ```
