@@ -2,7 +2,7 @@ import { useState } from "react";
 import logo from "/react.svg";
 import "@/App.css";
 
-function App() {
+export default function App() {
   const [count, setCount] = useState<number>(0);
 
   return (
@@ -41,5 +41,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
